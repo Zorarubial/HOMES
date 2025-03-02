@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECECA4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    background: linear-gradient(120deg, #ececa4, #43ac70, #2b7f49);
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #161a07;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5d591e;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #161a07;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #004080;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Visitor Logs Page - Side-by-Side Tables */
+.visitor-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+.visitor-table {
+    width: 48%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.visitor-table th, .visitor-table td {
+    border: 2px solid #161a07;
+    padding: 10px;
+    text-align: left;
+}
+
+.visitor-table th {
+    background-color: #161a07;
+    color: white;
+    text-align: center;
+}
+
+.visitor-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.search-sort {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search-sort input, .search-sort select {
+    padding: 5px;
+    font-size: 1rem;
+}

@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECECA4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    background: linear-gradient(120deg, #ececa4, #43ac70, #2b7f49);
+    color: white;
+}
+
+/* ADMIN TITLE */
+.container h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* PROFILE MENU */
+.profile-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* PROFILE PICTURE */
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #2b7f49;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #ececa4;
+}
+
+/* SHOW MENU ON HOVER */
+.profile-menu:hover .dropdown-menu {
+    display: flex;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #161a07;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5d591e;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #161a07;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;         
+}
+
+.buttons a:hover {
+    background-color: #004080;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+#map {
+    height: calc(100vh - 100px); /* Reduce map height to leave space for footer */
+    width: 100%;
+    border: #004080;
+
+    
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2b7f49;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2b7f49;
+    display: block;
+    text-align: center;
+}
+
+.sidebar ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar ul li a:hover {
+    color: #161a07;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card i {
+    font-size: 2rem;
+    color: #2b7f49;
+    margin-bottom: 10px;
+}
+
+.menu-card a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2b7f49;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-card p {
+    font-size: 0.9rem;
+    color: #5d591e;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-card a:hover {
+    color: #161a07;
+}
